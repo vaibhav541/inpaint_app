@@ -1,0 +1,4 @@
+#Thu Aug 19 23:56:17 IST 2021
+base.0=/Users/vaibhav/Documents/Work/inpaint_app/android-canvas-zoom-and-draw-over-image/app/build/intermediates/transforms/dexMerger/debug/0
+path.0=classes.dex
+renamed.0=classes.dex

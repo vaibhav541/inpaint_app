@@ -19,7 +19,7 @@ class DrawableView extends View {
     private Paint canvasPaint;
     private Canvas drawCanvas;
     private Bitmap canvasBitmap;
-    private int paintColor = Color.RED;
+    private int paintColor = Color.WHITE;
 
     public DrawableView(Context context) {
         super(context);
@@ -50,7 +50,7 @@ class DrawableView extends View {
         drawPaint.setStyle(Paint.Style.STROKE);
         drawPaint.setStrokeJoin(Paint.Join.ROUND);
         drawPaint.setStrokeCap(Paint.Cap.ROUND);
-        drawPaint.setStrokeWidth(10);
+        drawPaint.setStrokeWidth(50);
     }
     public void setDrawingEnabled(boolean isEditable){
         this.isEditable = isEditable;
@@ -88,5 +88,17 @@ class DrawableView extends View {
         }
         invalidate();
         return true;
+    }
+    public Bitmap getBitmap()
+    {
+        //this.measure(100, 100);
+        //this.layout(0, 0, 100, 100);
+        this.setDrawingCacheEnabled(true);
+        this.buildDrawingCache();
+        Bitmap bmp = Bitmap.createBitmap(this.getDrawingCache());
+        this.setDrawingCacheEnabled(false);
+
+
+        return bmp;
     }
 }

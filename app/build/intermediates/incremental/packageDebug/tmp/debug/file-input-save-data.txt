@@ -1,0 +1,7 @@
+#Internal package file, do not edit.
+#Thu Aug 19 23:41:22 IST 2021
+0.baseType=DIRECTORY
+0.base=/Users/vaibhav/Documents/Work/inpaint_app/android-canvas-zoom-and-draw-over-image/app/build/intermediates/transforms/dexMerger/debug/0
+0.path=classes.dex
+0.set=DEX
+count=1
